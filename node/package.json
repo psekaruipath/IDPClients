@@ -1,0 +1,15 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "gen-ts-client": "openapi-generator generate -i ./src/idp-lib/v1/swagger.json -g typescript-angular -o./src/idp-lib/v1/api/generated --skip-validate-spec"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@openapitools/openapi-generator-cli": "^1.0.8-4.2.2",
+        "typescript": "^3.7.3"
+    }
+}
